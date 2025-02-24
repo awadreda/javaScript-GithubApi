@@ -1,0 +1,152 @@
+
+
+
+
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+
+  margin: 30px auto;
+  padding: 10px;
+
+}
+
+.container .UserName {
+
+  background-color: #eee;
+
+  display: flex;
+
+  padding: 20px;
+  /* gap: 5px; */
+border-radius: 10px;
+align-items: center;
+justify-content: space-between;
+
+}
+
+
+
+.container .UserName .input_UserName {
+
+  width: 80%;
+
+  padding: 12px;
+
+border-radius: 10px;
+
+border: none;
+
+&:focus{
+
+  outline: none;
+}
+
+
+}
+
+
+.container .UserName .get_repos {
+
+display: block;
+background-color:   rgb(227, 73, 73);
+padding: 10px;
+font-weight: bold;
+color: white;
+
+border-radius: 10px;
+cursor: pointer;
+
+user-select: none;
+transition: .3s;
+&:hover {
+
+  background-color:rgb(181, 65, 65) ;
+}
+
+}
+
+
+
+.repos_show {
+
+  margin-top: 20px;
+background-color: #ddd;
+padding: 20px;
+/* display: flex; */
+/* justify-content: space-between; */
+border-radius: 10px;
+
+
+
+}
+
+.repos_show .repo {
+
+  background-color:white ;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.repos_show .repoName {
+
+width: fit-content;
+font-weight: bold;
+font-size: 20px;
+padding: 10px;
+
+
+}
+
+.repos_show .stars_visit {
+
+width: fit-content;
+
+}
+
+.stars_visit  .stars{
+
+  background-color:rgb(39, 150, 39) ;
+  color: white;
+
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin-right: 8px;
+  
+  
+}
+
+
+.stars_visit a {
+  
+  text-decoration: none;
+  
+    background-color:rgb(52, 52, 197) ;
+    color: white;
+  
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 10px;
+transition: .3s;
+    &:hover{
+
+      background-color: rgb(2, 2, 90);
+    }
+
+}
